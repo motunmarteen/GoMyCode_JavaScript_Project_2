@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Capitalize Words: Implement a function that capitalizes the first letter of each word in a sentence.
+</h1>
+
+    <pre>
+        let userWords = prompt("Type in here to capitalize your words or sentences")
+
+        function wordsCapitalize(sentence) {
+        let words = sentence.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        }
+
+        return words.join(" ");
+        }
+
+        console.log(wordsCapitalize(userWords))
+    </pre>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
